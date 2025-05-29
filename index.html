@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Algorithms Drawn by AI</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algorithms Drawn by AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1>Algorithms Drawn by AI</h1>
-  <canvas id="canvas1" width="800" height="300"></canvas>
-  <canvas id="canvas2" width="800" height="300"></canvas>
-  <script type="module" src="main.js"></script>
+    <h1>Algorithms Drawn by AI</h1>
+    <label for="algoSelect">Choose algorithm:</label>
+    <select id="algoSelect">
+        <option value="bubble" selected>Bubble Sort</option>
+        <option value="selection">Selection Sort</option>
+        <option value="insertion">Insertion Sort</option>
+        <option value="merge">Merge Sort</option>
+        <option value="quick">Quick Sort</option>
+    </select>
+    <button id="darkToggle">Toggle Dark Mode</button>
+    <canvas id="sortCanvas" width="800" height="300"></canvas>
+    <p id="sortTime" style="margin-top: 1rem; font-size: 1rem;"></p>
+    <p id="sortDescription" style="margin-top: 0.5rem; font-size: 0.9rem;"></p>
+    <script type="module" src="main.js"></script>
 </body>
+
 </html>
